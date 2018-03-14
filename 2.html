@@ -21,7 +21,12 @@
       color:gray;
       text-decoration: none;
     }
-
+    ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 33px;
+    }
     h1 {
       font-size: 60px;
       text-align: center;
@@ -30,10 +35,7 @@
       padding: 20px;
     }
     #grid ol {
-      border-right: 1px solid gray;
-      width: 100px;
-      margin: 0;
-      padding: 33px;
+      padding: 25px;
     }
     #grid{
       display: grid;
@@ -41,6 +43,18 @@
     }
     #grid #article{
       padding: 25px
+    }
+    @media(max-width: 800px){
+      #grid{
+        display: block;
+      }
+      ol {
+        border-right: none;
+      }
+      h1{
+        border-bottom: none;
+      }
+
     }
   </style>
 </head>
